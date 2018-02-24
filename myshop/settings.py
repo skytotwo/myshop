@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'shop',
     'cart',
     'orders',
+    'paypal.standard.ipn',
+    'payment',
 ]
 
 MIDDLEWARE = [
@@ -137,3 +139,7 @@ EMAIL_HOST_USER = '271380178@qq.com'
 EMAIL_HOST_PASSWORD = 'upyunngltwuebibg'
 EMAIL_USE_TLS = True
 EMAIL_FROM = 'Tencent<271380178@qq.com>'
+
+# django-paypal settings
+PAYPAL_RECEIVER_EMAIL = '271380178@qq.com'
+PAYPAL_TEST = True
