@@ -143,3 +143,8 @@ EMAIL_FROM = 'Tencent<271380178@qq.com>'
 # django-paypal settings
 PAYPAL_RECEIVER_EMAIL = '271380178@qq.com'
 PAYPAL_TEST = True
+
+# redis settings
+REDIS_HOST = 'localhost'
+REDIS_PORT = 6379
+REDIS_DB = 1
