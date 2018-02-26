@@ -32,4 +32,7 @@ Django 2.0
 最后浏览器中打开http://127.0.0.1:8000/ 即可访问
 
 ### 预览
-![首页](/home/yee/图片/首页.png)
+![首页](https://github.com/ybcc2015/myshop/blob/master/screen_shot/index.png)
+![商品详情页](https://github.com/ybcc2015/myshop/blob/master/screen_shot/detail.png)
+![购物车](https://github.com/ybcc2015/myshop/blob/master/screen_shot/cart.png)
+![付款页](https://github.com/ybcc2015/myshop/blob/master/screen_shot/payment.png)
