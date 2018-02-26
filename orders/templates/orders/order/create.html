@@ -1,13 +1,13 @@
 {% extends "shop/base.html" %}
 
 {% block title %}
-    Checkout
+    Sneakers
 {% endblock %}
 
 {% block content %}
-    <h1>Checkout</h1>
+    <h1>结 算</h1>
     <div class="order-info">
-        <h3>Your order</h3>
+        <h3>您的订单</h3>
         <ul>
             {% for item in cart %}
             <li>
@@ -16,11 +16,11 @@
             </li>
             {% endfor %}
         </ul>
-        <p>Total: ¥{{ cart.get_total_price }}</p>
+        <p>总计: ¥{{ cart.get_total_price }}</p>
     </div>
     <form action="." method="post" class="order-form">
         {{ form.as_p }}
-        <p><input type="submit" value="Place order"></p>
+        <p><input type="submit" value="确定"></p>
         {% csrf_token %}
     </form>
 {% endblock %}

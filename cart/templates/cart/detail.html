@@ -2,20 +2,20 @@
 {% load static %}
 
 {% block title %}
-    Your shopping cart
+    Sneakers
 {% endblock %}
 
 {% block content %}
-    <h1>Your shopping cart</h1>
+    <h1>您的购物车</h1>
     <table class="cart">
         <thead>
             <tr>
-                <th>Image</th>
-                <th>Product</th>
-                <th>Quantity</th>
-                <th>Remove</th>
-                <th>Unit price</th>
-                <th>Price</th>
+                <th>图 片</th>
+                <th>商 品</th>
+                <th>数 量</th>
+                <th>移 除</th>
+                <th>单 价</th>
+                <th>总 价</th>
             </tr>
         </thead>
         <tbody>
@@ -46,7 +46,7 @@
             {% endwith %}
             {% endfor %}
             <tr class="total">
-                <td>Total</td>
+                <td>总 计</td>
                 <td colspan="4"></td>
                 <td class="num">¥{{ cart.get_total_price }}</td>
             </tr>
@@ -55,7 +55,7 @@
 
     {% if recommended_products %}
     <div class="recommendations cart">
-        <h3>People who bought this also bought</h3>
+        <h3>猜您喜欢:</h3>
         {% for p in recommended_products %}
         <div class="item">
             <a href="{{ p.get_absolute_url }}">
@@ -69,9 +69,9 @@
     {% endif %}
 
     <p class="text-right">
-        <a href="{% url 'shop:product_list' %}" class="buttonlight">Continue shopping</a>
+        <a href="{% url 'shop:product_list' %}" class="buttonlight">继续购物</a>
         <a href="{% url 'orders:order_create' %}" class="button">
-            Checkout
+            去结算
         </a>
     </p>
 {% endblock %}
