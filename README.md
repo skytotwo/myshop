@@ -23,10 +23,10 @@ Django 2.0
 4. 创建超级用户  
   `python manage.py createsuperuser`
 5. 安装并启动redis  
-  `sudo apt-get update  `
-  `sudo apt-get install redis-server`   
-  `sudo /etc/init.d/redis-server start`
-6. 启动项目
+  `sudo apt-get update`  
+  `sudo apt-get install redis-server`  
+  `sudo /etc/init.d/redis-server start`  
+6. 启动项目  
   `python manage.py runserver`
 
 最后浏览器中打开http://127.0.0.1:8000/ 即可访问
